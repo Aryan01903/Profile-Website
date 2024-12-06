@@ -9,12 +9,44 @@
 <body>
     <header>
         <div class="navbar">
-            <div>Aryan's Portfolio</div>
-            <div>Home</div>
-            <div>About</div>
-            <div>Projects</div>
-            <div>Contact Me</div>
+            <div>Aryan Kumar Shrivastav's Portfolio</div>
+            <a href="/" class="intro">Home</a>
+            <a href="/" class="intro">About</a>
+            <a href="/" class="intro">Projects</a>
+            <a href="/" class="intro">Contact Me</a>  
         </div>
     </header>
+    <main>
+        <div class="firstSection">
+            <div class="left">
+                <img src="profile photo.jpeg" class="profile-image" alt="" height="400px" width="400px">
+            </div>
+            <div class="right">
+                <div>Hi, My Name is <Span class="name">Aryan Kumar Shrivastav</Span>. 
+                    <div>I am aspiring to become Software Engineer and a passionate</div>
+                    <span id="element"></span>
+                    <div>
+                        <a href="https://github.com/Aryan01903/" target="_main"><button>GitHub</button></a>
+                        <a href="https://www.linkedin.com/in/aryan-kumar-shrivastav-638831268/" target="_main"><button>LinkedIn</button></a>
+                    </div>
+                </div>              
+        </div>
+        </div>
+        <hr>
+        <div class="secondSection">
+            <h1>PROJECTS</h1>
+            <div>
+                <h4>1. ECOMMERCE API</h4>
+                The E-Commerce API is a robust backend application built using JavaScript, Node.js, Express.js, and MongoDB. It facilitates the core functionalities required for an online shopping platform, including user authentication with JWT for secure login and role-based access. The API enables efficient product management, allowing the creation, retrieval, updating, and deletion of product data. It also supports order placement and tracking, ensuring seamless integration of customer and admin operations. With a focus on scalability and security, the API ensures smooth handling of data and transactions in a structured and efficient manner.                
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['ECE Student','ML Enthusiast','Web Developer. '],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 </html>
