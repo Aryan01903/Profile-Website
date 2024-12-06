@@ -1,0 +1,9 @@
+body{
+    background-color : rgb(0,0,100);
+    color : #ffffff;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
