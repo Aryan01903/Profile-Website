@@ -5,48 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aryan's Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <div class="navbar">
             <div>Aryan Kumar Shrivastav's Portfolio</div>
-            <a href="/" class="intro">Home</a>
-            <a href="/" class="intro">About</a>
-            <a href="/" class="intro">Projects</a>
-            <a href="/" class="intro">Contact Me</a>  
+                <a href="#Home" class="intro">Home</a>
+                <a href="#Education" class="intro">Education</a>
+                <a href="#Projects" class="intro">Projects</a>
+                <a href="#Contact-Me" class="intro">Contact Me</a>  
         </div>
     </header>
     <main>
-        <div class="firstSection">
+        <div id="Home">
+            <div class="right">
+                <div>Hi, My Name is <Span class="name">Aryan Kumar Shrivastav</Span>, aspiring to become Software Engineer
+                    <div> and a passionate <span id="element"></span></div>
+                    
+                    <div>
+                        <a href="https://github.com/Aryan01903/" target="_main"><button>GitHub</button></a>
+                        <a href="https://www.linkedin.com/in/aryan-kumar-shrivastav-638831268/" target="__main"><button>LinkedIn</button></a>
+                    </div>
+                </div>              
+            </div>
+            
             <div class="left">
                 <img src="profile photo.jpeg" class="profile-image" alt="" height="400px" width="400px">
             </div>
-            <div class="right">
-                <div>Hi, My Name is <Span class="name">Aryan Kumar Shrivastav</Span>. 
-                    <div>I am aspiring to become Software Engineer and a passionate</div>
-                    <span id="element"></span>
-                    <div>
-                        <a href="https://github.com/Aryan01903/" target="_main"><button>GitHub</button></a>
-                        <a href="https://www.linkedin.com/in/aryan-kumar-shrivastav-638831268/" target="_main"><button>LinkedIn</button></a>
-                    </div>
-                </div>              
-        </div>
+            
         </div>
         <hr>
-        <div class="secondSection">
-            <h1>PROJECTS</h1>
-            <div>
-                <h4>1. ECOMMERCE API</h4>
-                The E-Commerce API is a robust backend application built using JavaScript, Node.js, Express.js, and MongoDB. It facilitates the core functionalities required for an online shopping platform, including user authentication with JWT for secure login and role-based access. The API enables efficient product management, allowing the creation, retrieval, updating, and deletion of product data. It also supports order placement and tracking, ensuring seamless integration of customer and admin operations. With a focus on scalability and security, the API ensures smooth handling of data and transactions in a structured and efficient manner.                
-            </div>
+        <div id="Education">
+            <span class="heading">EDUCATION</i></span>
+            <div class="title">DR AKHILESH DAS GUPTA INSTITUTE OF TECHNOLOGY NEW DELHI (UNDER GGSIPU) <i class="fa-solid fa-graduation-cap"></i></div>
+            <div>BACHELOR OF TECHNOLOGY in ELECTRONICS AND COMMUNICATION ENGINEERING</div>
+            <div>8.363 GPA</div>
+            <div>NOV 2022 - JUL 2026</div>
+            <div class="title">SCHOOL OF EXCELLENCE SECTOR-23 ROHINI NEW DELHI <i class="fa-solid fa-school"></i></div>
+            <div>CLASS 12</div>
+            <div>89.6%</div>
+            <div>APR 2020 - JUL 2021</div>
+            <div class="title">SCHOOL OF EXCELLENCE SECTOR-23 ROHINI NEW DELHI <i class="fa-solid fa-school"></i></div>
+            <div>CLASS 10</div>
+            <div>87%</div>
+            <div>APR 2018 - MAY 2019</div>
+        </div>
+        <hr>
+        <div id="Projects">
+            <span class="heading">PROJECTS</span>
+            <div class="title">1. ECOMMERCE API :- </div>
+            <div class="desc">The E-Commerce API is a robust backend application built using JavaScript, Node.js, Express.js, and MongoDB. It facilitates the core functionalities required for an online shopping platform, including user authentication with JWT for secure login and role-based access. The API enables efficient product management, allowing the creation, retrieval, updating, and deletion of product data. It also supports order placement and tracking, ensuring seamless integration of customer and admin operations. With a focus on scalability and security, the API ensures smooth handling of data and transactions in a structured and efficient manner.</div>
+            <a href="https://github.com/Aryan01903/Ecommerce-API.git" target="_main"><button class="button-source-code">Source Code</button></a>
+            
+            <div class="title">2. MY PERSONAL FINANCE CALCULATOR :- </div>
+            <div class="desc">The frontend of the Personal Finance Calculator is a standalone application designed to help users track and manage their finances efficiently. Built with HTML, CSS, and JavaScript, it features an intuitive interface that allows users to input their income, expenses, and savings. The application performs all calculations directly in the browser, displaying real-time summaries and insights through visually appealing charts and tables. With a clean and responsive design, it ensures a smooth user experience across various devices, making personal financial management simple and accessible.</div>
+            <a href="https://github.com/Aryan01903/personal-finance-tracker.git" target="_main"><button class="button-source-code">Source Code</button></a> 
         </div>
     </main>
+    <footer>
+        <div id="Contact-Me">
+            <div class="contact">
+                <div class="footer-first">
+                    <h3>Aryan's Developer Portfolio</h3>
+                </div>
+                <div class="footer-second">
+                    <div style="font-size: 2vw;">For any enquiry contact Email-id <i class="fa-solid fa-envelope"></i> : main.aryanshrivastav2003@gmail.com</div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
     var typed = new Typed('#element', {
       strings: ['ECE Student','ML Enthusiast','Web Developer. '],
       typeSpeed: 50,
     });
-  </script>
+    </script>
+    <!--Smmoth Scrolling-->
+    <script>
+        document.querySelectorAll('.intro').forEach(link => {
+          link.addEventListener('click', event => {
+            event.preventDefault(); // Prevent default anchor behavior
+            const targetId = link.getAttribute('href').substring(1); // Get target ID
+            const targetElement = document.getElementById(targetId);
+            targetElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll
+          });
+        });
+      </script>
 </body>
 </html>

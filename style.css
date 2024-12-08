@@ -10,11 +10,12 @@ body{
 }
 
 .navbar{
-    height : 60px;
+    height : 4vw;
     display : flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(0,0,100);
+    margin : auto;
 }
 .intro{
     text-decoration: none;
@@ -26,17 +27,18 @@ body{
 
 .profile-image{
     border-radius: 50%;
-    margin : 25px 120px;
+    margin : 25px 90px;
 }
-.firstSection{
+#Home{
     display:flex;
     justify-content: space-evenly;
     margin-bottom: 80px;
 }
 
-.firstSection .right{
+.right{
     margin-top : 100px;
     font-size : 2.5rem;
+    margin-left:20px;
 }
 
 .name{
@@ -44,11 +46,12 @@ body{
 }
 
 button{
-    margin:25px 100px;
-    font-size: 1.04rem;
+    margin:25px 80px;
+    font-size: 1.4rem;
     padding : 30px;
-    border-radius: 10%;
-    background-color:blue;
+    border-radius: 25%;
+    background-color:rgb(30,30,180);
+    font-weight: bold;
 }
 hr{
     margin : 50px;
@@ -56,12 +59,44 @@ hr{
     border:1.5px solid;
 }
 
-h1{
-    margin:30px 50px;
+#Projects{
+    margin : 20px 60px;
 }
-h4{
-    margin:30px 50px; 
+.heading{
+    font-size: 3rem;
+    font-weight: bold;
+    color: gold;
+}
+
+.title{
+    margin-top:10px;
+    font-size: 1.5rem;
 }
 .desc{
-    margin:30px 50px;
+    margin-left: 30px;
+    font-size:1.1rem;
+}
+
+.button-source-code{
+    font-size:1.1rem;
+    background-color: rgb(30,30,180);
+    margin: 0;
+    padding: 15px;
+    border-radius: 10%;
+    margin-left:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#Education{
+    margin : 20px 60px;
+}
+
+footer{
+    background-color: #0e0e1a;
+    height : 133px;
+}
+#Contact-Me{
+    display : flex;
+    padding : 23px 123px;
 }
